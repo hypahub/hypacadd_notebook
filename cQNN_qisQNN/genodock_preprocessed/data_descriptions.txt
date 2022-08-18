@@ -1,0 +1,13 @@
+genodock_1_norm: Feature Group 1 of the GenoDock data, normalized so that everything fits in the [0,1] range.
+genodock_2_norm: Feature Group 2 "  "
+genodock_3_norm: Feature Group 3 "  "
+genodock_4_norm: Feature Group 4 "  "
+
+genodock_hypahub_viral_fix_norm: Viral data samples from HypaHub, normalized to the [0,1] range. Uses four nonhuman features ("bind_site", "distance", "polarity_change_index", and "volume_change_index") to work with the QNN model trained on nonhuman GenoDock features.
+
+genodock_nonhuman_norm: Subset of nonhuman features from the GenoDock data normalized to the [0, 1] range. The features included are "bind_site", "distance", "polarity_change_index", and "volume_change_index".
+
+genodock_platinum_1_af_norm: Feature Group 1 of the Platinum Dataset used in the GenoDock paper, normalized to [0,1]. Note that the original Platinum Dataset had no "allele_freq" feature, but Feature Group 1 of the GenoDock data does include "allele_freq". To accomodate for this, we added an "allele_freq" column to the Platinum Dataset and filled it with zeros. This is indicated by "af" in the file name.
+genodock_platinum_gdk2_af_norm: Same as above but for Feature Group 2. (no idea why the prev file name uses just "1" and this one uses "gdk2"... sorry for the inconsistency.)
+genodock_platinum_gdk2_af_norm: Same as above but for Feature Group 3.
+genodock_platinum_4_af_norm: Same as above but for Feature Group 4.
